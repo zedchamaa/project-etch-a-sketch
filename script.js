@@ -20,7 +20,7 @@ createGrid();
 // Color the grid squares on mouse hover
 
 function toggleClass(element) {
-  if (element.className = "square-div") {
+  if (element.className === "square-div") {
     element.className = "square-div-filled";
-  } else element.className = "square-div";
+  } 
 }

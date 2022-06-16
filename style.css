@@ -29,7 +29,7 @@ body {
   height: 16px;
   width: 16px;
   flex-shrink: 0;
-  border: 0.5px solid grey;
+  border: 0.5px solid white;
   background-color: white;
   cursor: pointer;
   transition: ease-out 0.3s;
