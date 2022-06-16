@@ -12,14 +12,20 @@ body {
 
 .grid-container {
   display: flex;
-  border: 0.2em solid blue;
   flex-wrap: wrap;
-  width: 800px;
-  height: 500px;
+  flex-shrink: 0;
+  justify-content: center;
+  border: 2em solid red;
+  width: 960px;
+  height: auto;
 }
 
-.square-div {
+#square-div {
   height: 16px;
   width: 16px;
+  flex-shrink: 0;
   border: 0.5px solid grey;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+  outline: none;
 }
