@@ -25,11 +25,23 @@ body {
   height: auto;
 }
 
-#square-div {
+.square-div {
   height: 16px;
   width: 16px;
   flex-shrink: 0;
   border: 0.5px solid grey;
+  background-color: white;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.square-div-filled {
+  height: 16px;
+  width: 16px;
+  flex-shrink: 0;
+  border: 0.5px solid grey;
+  background-color: black;
   cursor: pointer;
   transition: ease-out 0.3s;
   outline: none;
