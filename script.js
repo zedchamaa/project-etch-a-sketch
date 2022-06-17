@@ -108,8 +108,3 @@ function toggleClass(element) {
     element.className = "square-div-filled";
   } 
 }
-
-
-
-
-

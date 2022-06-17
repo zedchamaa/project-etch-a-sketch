@@ -8,6 +8,10 @@ body {
   padding-top: 10px;
 }
 
+h3 {
+  color: blue;
+}
+
 #mainContainer {
   display: flex;
   flex-direction: column;
@@ -95,8 +99,25 @@ body {
 button {
   width: 100px;
   height: 50px;
-  border-radius: 2px;
+  border-radius: 5px;
+  border: none;
   font-weight: bold;
   cursor: pointer;
   font-size: 18px;
+  background-color: orange;
+  color: black;
+}
+
+button:hover {
+  background-color: #2EA34F;
+  color: white;
+}
+
+#clear-btn {
+  background-color: #9d9393;
+  color: white;
+}
+
+#clear-btn:hover {
+  background-color: red;
 }
