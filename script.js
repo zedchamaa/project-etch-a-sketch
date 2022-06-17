@@ -76,6 +76,31 @@ function createLargeGrid() {
   }
 }
 
+// Clear grid
+
+const clearButton = document.querySelector('#clear-btn');
+clearButton.addEventListener("click", clearGrid);
+
+function clearGrid() {
+  // Target the second child of the mainContainer div
+  const mainContainer = document.getElementById('mainContainer');
+  const gridContainerClass = mainContainer.children[1];
+  // Create a new element/node
+  const newGridContainerClass = document.createElement('div');
+  newGridContainerClass.className = "clear-grid-container";
+  // Replace class name
+  mainContainer.replaceChild(newGridContainerClass, gridContainerClass);
+  // Create large grid
+  let gridSize = 42;
+  let n = gridSize * gridSize; // n is the total number of div squares
+  for (let i = 0; i < n; i++) {
+    const gridContainer = document.querySelector('.clear-grid-container');
+    const div = document.createElement('div');
+    div.classList.add('square-div'); 
+    gridContainer.append(div);
+  }
+}
+
 // Color the grid squares on mouse move
 
 function toggleClass(element) {
